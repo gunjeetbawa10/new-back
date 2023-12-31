@@ -8,7 +8,7 @@ import FeatureSecond from './featuresecond';
 import Testi from './testimonial/testi';
 import CompanyLogo from './CompanyLogo/company_logo';
 import { CheckIcon } from '@heroicons/react/20/solid'
-
+import { Analytics } from '@vercel/analytics/react';
 const includedFeatures = [
   'Private forum access',
   'Member resources',
@@ -25,6 +25,7 @@ const IndexPage = () => {
    <CompanyLogo/>
   
     <Featuremain/>
+    <Analytics />
     <Stats/>
     <FeatureSecond/>
     <Testi/>
