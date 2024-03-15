@@ -13,6 +13,7 @@ const Pricing = () => {
   <>   
   <Hero/>
    <Pricingcomp/>
+   
    </>
 
   );
