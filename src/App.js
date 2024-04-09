@@ -11,6 +11,8 @@ import CompanyLogo from './CompanyLogo/company_logo';
 import { CheckIcon } from '@heroicons/react/20/solid'
 import { Analytics } from '@vercel/analytics/react';
 import { SpeedInsights } from "@vercel/speed-insights/react"
+import Pricing from './pages/pricing';
+
 const includedFeatures = [
   'Private forum access',
   'Member resources',
@@ -22,6 +24,12 @@ const includedFeatures = [
 const IndexPage = () => {
   return (
    <> 
+
+<Routes>
+          <Route path="/pricing" element={<Pricing />} />
+         
+       </Routes>
+
    <SpeedInsights/>
    <Hero/>
    <section class="bg-white dark:bg-gray-900">

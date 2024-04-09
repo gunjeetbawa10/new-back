@@ -5,6 +5,11 @@ const includedFeatures = [
   'Member resources',
   'Entry to annual conference',
   'Official member t-shirt',
+  'Official member t-shirt',
+
+
+  
+  
 ]
 
 export default function Pricingcomp() {
