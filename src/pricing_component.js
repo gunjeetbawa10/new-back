@@ -69,5 +69,6 @@ export default function Pricingcomp() {
         </div>
       </div>
     </div>
+    
   )
 }
