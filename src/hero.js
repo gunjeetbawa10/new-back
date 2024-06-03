@@ -24,7 +24,7 @@ export default function Hero() {
       <header className="absolute inset-x-0 top-0 z-50">
         <nav className="flex items-center justify-between p-6 lg:px-8" aria-label="Global">
           <div className="flex lg:flex-1">
-            <a href="#" className="-m-1.5 p-1.5">
+            <a href="/" className="-m-1.5 p-1.5">
               <span className="sr-only">Teamaimed</span>
               <img
                 className="h-8 w-auto"
@@ -33,6 +33,7 @@ export default function Hero() {
               />
             </a>
           </div>
+          
           <div className="flex lg:hidden">
             <button
               type="button"
@@ -53,6 +54,10 @@ export default function Hero() {
           </div>
        
           <div className="hidden lg:flex lg:flex-1 lg:justify-end">
+            <a href="#" className="text-sm font-bold leading-3 text-gray-900 text-indent:50px">
+              Register Now <span aria-hidden="false">&rarr;</span>
+            </a>
+            
             <a href="#" className="text-sm font-bold leading-3 text-gray-900">
               Log in <span aria-hidden="true">&rarr;</span>
             </a>
@@ -117,7 +122,7 @@ export default function Hero() {
         <div class="w-full mx-auto text-left md:w-11/12 xl:w-9/12 md:text-center">
         <div className="hidden sm:mb-8 sm:flex sm:justify-center">
             <div className="relative rounded-full px-3 py-1 text-sm leading-6 text-gray-600 ring-1 ring-gray-900/10 hover:ring-gray-900/20">
-              Announcing our next round of funding.{' '}
+            Maximize Savings, Maximize Productivity !{' '}
               <a href="/pricing" className="font-semibold text-rose-600">
                 <span className="absolute inset-0" aria-hidden="true" />
                 Read more <span aria-hidden="true">&rarr;</span>

@@ -11,7 +11,7 @@ export default function Stats() {
         <b>
       <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div
-          class="rounded-2xl py-10 px-10 xl:py-16 xl:px-20 bg-gray-50 flex items-center justify-between flex-col gap-16 lg:flex-row">
+          class="rounded-2xl py-10 px-10 xl:py-16 xl:px-20 bg-white flex items-center justify-between flex-col gap-16 lg:flex-row">
           <div class="w-full lg:w-60">
             <h2
               class="font-manrope text-4xl font-bold text-gray-900 mb-4 text-center lg:text-left"
@@ -28,42 +28,42 @@ export default function Stats() {
             >
               <div class="block">
                 <div
-                  class="font-manrope font-bold text-4xl text-rose-700 mb-3 text-center lg:text-left"
+                  class="font-manrope font-extrabold text-4xl text-rose-700 mb-3 text-center lg:text-left"
                 >
-                  260+
+                  2500+
                 </div>
                 <span class="text-gray-900 text-center block lg:text-left"
-                  >Expert Consultants
+                  >Registered companies
                 </span>
               </div>
               <div class="block">
                 <div
-                  class="font-manrope font-bold text-4xl text-rose-700 mb-3 text-center lg:text-left"
+                  class="font-manrope font-extrabold text-4xl text-rose-700 mb-3 text-center lg:text-left"
                 >
-                  975+
+                  36,000+
                 </div>
                 <span class="text-gray-900 text-center block lg:text-left"
-                  >Active Clients
+                  >Active Employees
                 </span>
               </div>
               <div class="block">
                 <div
-                  class="font-manrope font-bold text-4xl text-rose-700 mb-3 text-center lg:text-left"
+                  class="font-manrope font-extrabold text-4xl text-rose-700 mb-3 text-center lg:text-left"
                 >
-                  724+
+                  500K+
                 </div>
                 <span class="text-gray-900 text-center block lg:text-left"
-                  >Projects Delivered</span
+                  >Task Assigned</span
                 >
               </div>
               <div class="block">
                 <div
-                  class="font-manrope font-bold text-4xl text-rose-700 mb-3 text-center lg:text-left"
+                  class="font-manrope font-extrabold text-4xl text-rose-700 mb-3 text-center lg:text-left"
                 >
-                  89+
+                  10M+
                 </div>
                 <span class="text-gray-900 text-center block lg:text-left"
-                  >Orders in Queue</span
+                  >Messages Exchange</span
                 >
               </div>
             </div>

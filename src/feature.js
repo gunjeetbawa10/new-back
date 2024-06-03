@@ -2,19 +2,19 @@ import { CloudArrowUpIcon, LockClosedIcon, ServerIcon } from '@heroicons/react/2
 
 const features = [
   {
-    name: 'Push to deploy.',
+    name: 'Unified Platform',
     description:
-      'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.',
+      'Unlock productivity like never before with Teamaimed centralized suite, bridging the gap between project, finance, and employee management.',
     icon: CloudArrowUpIcon,
   },
   {
     name: 'SSL certificates.',
-    description: 'Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo.',
+    description: 'Safeguard data, boost trust with SSL from Teamaimed.',
     icon: LockClosedIcon,
   },
   {
     name: 'Database backups.',
-    description: 'Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.',
+    description: 'Protect your data with Teamaimed automated backups. Encrypted and customizable, our system ensures peace of mind and swift recovery.',
     icon: ServerIcon,
   },
 ]
@@ -26,12 +26,10 @@ export default function Featuremain() {
         <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2">
           <div className="lg:pr-8 lg:pt-4">
             <div className="lg:max-w-lg">
-              <h2 className="text-base font-semibold leading-7 text-indigo-600">Deploy faster</h2>
-              <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">A better workflow</p>
+              <h2 className="text-base font-semibold leading-7 text-rose-800">Be more Productive</h2>
+              <p className="mt-2 text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl">A better workflow</p>
               <p className="mt-6 text-lg leading-8 text-gray-600">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque,
-                iste dolor cupiditate blanditiis ratione.
-              </p>
+              Teamaimed: Seamless integration, centralized efficiency. One platform for all your business needs, ensuring streamlined operations and enhanced productivity.   </p>
               <dl className="mt-10 max-w-xl space-y-8 text-base leading-7 text-gray-600 lg:max-w-none">
                 {features.map((feature) => (
                   <div key={feature.name} className="relative pl-9">

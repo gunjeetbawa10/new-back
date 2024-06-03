@@ -5,15 +5,16 @@ import Stats from '../stats'
 import Hero from '../hero';
 import Featuremain from '../feature';
 import Pricingcomp from '../pricing_component';
+import Header from '../header';
 
 
 
 const Pricing = () => {
   return (
   <>   
-  <Hero/>
+
    <Pricingcomp/>
-   
+    
    </>
 
   );

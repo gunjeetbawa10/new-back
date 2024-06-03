@@ -12,13 +12,10 @@ import { CheckIcon } from '@heroicons/react/20/solid'
 import { Analytics } from '@vercel/analytics/react';
 import { SpeedInsights } from "@vercel/speed-insights/react"
 import Pricing from './pages/pricing';
+import Featurethird from './pages/featurethird'
+import About from './pages/about'
+import Header from './header'
 
-const includedFeatures = [
-  'Private forum access',
-  'Member resources',
-  'Entry to annual conference',
-  'Official member t-shirt',
-]
 
 
 const IndexPage = () => {
@@ -26,7 +23,9 @@ const IndexPage = () => {
    <> 
 
 <Routes>
+
           <Route path="/pricing" element={<Pricing />} />
+          <Route path="/about_us" element={<About/>} />
          
        </Routes>
 
@@ -34,6 +33,7 @@ const IndexPage = () => {
    <Hero/>
    <Stats/>
    <Featuremain/>
+   
    <section class="bg-white dark:bg-gray-900">
     <div class="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 lg:px-12">
         <a href="#" class="inline-flex justify-between items-center py-1 px-1 pr-4 mb-7 text-sm text-gray-700 bg-gray-100 rounded-full dark:bg-gray-800 dark:text-white hover:bg-gray-200 dark:hover:bg-gray-700" role="alert">
@@ -87,12 +87,13 @@ const IndexPage = () => {
         </div> 
     </div>
 </section>
-   <CompanyLogo/>
+ 
   
    
     <Analytics />
+  
     
-    <FeatureSecond/>
+   
     <Testi/>
     <div className="bg-white">
       <div className="mx-auto max-w-7xl py-24 sm:px-6 sm:py-32 lg:px-8">
@@ -105,8 +106,8 @@ const IndexPage = () => {
             <circle cx={512} cy={512} r={512} fill="url(#759c1415-0410-454c-8f7c-9a820de03641)" fillOpacity="0.7" />
             <defs>
               <radialGradient id="759c1415-0410-454c-8f7c-9a820de03641">
-                <stop stopColor="#7775D6" />
-                <stop offset={1} stopColor="#E935C1" />
+                <stop stopColor="#BE123C" />
+                <stop offset={1} stopColor="#BE123C" />
               </radialGradient>
             </defs>
           </svg>
@@ -117,7 +118,7 @@ const IndexPage = () => {
               Start using our app today.
             </h2>
             <p className="mt-6 text-lg leading-8 text-gray-300">
-              Ac euismod vel sit maecenas id pellentesque eu sed consectetur. Malesuada adipiscing sagittis vel nulla.
+            Transform your business with Teamaimed. Experience streamlined operations, boosted productivity, and seamless collaboration. 
             </p>
             <div className="mt-10 flex items-center justify-center gap-x-6 lg:justify-start">
               <a
@@ -126,7 +127,7 @@ const IndexPage = () => {
               >
                 Get started
               </a>
-              <a href="#" className="text-sm font-semibold leading-6 text-white">
+              <a href="/pricing" className="text-sm font-semibold leading-6 text-white">
                 Learn more <span aria-hidden="true">→</span>
               </a>
             </div>
@@ -143,146 +144,7 @@ const IndexPage = () => {
         </div>
       </div>
     </div>
-    <div className="bg-white py-24 sm:py-32">
-      <div className="mx-auto max-w-7xl px-6 lg:px-8">
-        <div className="mx-auto max-w-2xl sm:text-center">
-          <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Simple no-tricks pricing</h2>
-          <p className="mt-6 text-lg leading-8 text-gray-600">
-            Distinctio et nulla eum soluta et neque labore quibusdam. Saepe et quasi iusto modi velit ut non voluptas
-            in. Explicabo id ut laborum.
-          </p>
-        </div>
-        <div className="mx-auto mt-16 max-w-2xl rounded-3xl ring-1 ring-gray-200 sm:mt-20 lg:mx-0 lg:flex lg:max-w-none">
-          <div className="p-8 sm:p-10 lg:flex-auto">
-            <h3 className="text-2xl font-bold tracking-tight text-gray-900">Lifetime membership</h3>
-            <p className="mt-6 text-base leading-7 text-gray-600">
-              Lorem ipsum dolor sit amet consect etur adipisicing elit. Itaque amet indis perferendis blanditiis
-              repellendus etur quidem assumenda.
-            </p>
-            <div className="mt-10 flex items-center gap-x-4">
-              <h4 className="flex-none text-sm font-semibold leading-6 text-indigo-600">What’s included</h4>
-              <div className="h-px flex-auto bg-gray-100" />
-            </div>
-            <ul
-              role="list"
-              className="mt-8 grid grid-cols-1 gap-4 text-sm leading-6 text-gray-600 sm:grid-cols-2 sm:gap-6"
-            >
-              {includedFeatures.map((feature) => (
-                <li key={feature} className="flex gap-x-3">
-                  <CheckIcon className="h-6 w-5 flex-none text-indigo-600" aria-hidden="true" />
-                  {feature}
-                </li>
-              ))}
-            </ul>
-          </div>
-          <div className="-mt-2 p-2 lg:mt-0 lg:w-full lg:max-w-md lg:flex-shrink-0">
-            <div className="rounded-2xl bg-gray-50 py-10 text-center ring-1 ring-inset ring-gray-900/5 lg:flex lg:flex-col lg:justify-center lg:py-16">
-              <div className="mx-auto max-w-xs px-8">
-                <p className="text-base font-semibold text-gray-600">Pay once, own it forever</p>
-                <p className="mt-6 flex items-baseline justify-center gap-x-2">
-                  <span className="text-5xl font-bold tracking-tight text-gray-900">$349</span>
-                  <span className="text-sm font-semibold leading-6 tracking-wide text-gray-600">USD</span>
-                </p>
-                <a
-                  href="#"
-                  className="mt-10 block w-full rounded-md bg-indigo-600 px-3 py-2 text-center text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
-                >
-                  Get access
-                </a>
-                <p className="mt-6 text-xs leading-5 text-gray-600">
-                  Invoices and receipts available for easy company reimbursement
-                </p>
-              </div>
-              
-            </div>
-          </div>
-          
-        </div>
-        
-      </div>
-      <section class="py-24 ">
-        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-              <div class="mb-14 text-center">
-                  <h2 class="text-4xl text-center font-bold text-gray-900 leading-[3.25rem] mb-6 max-w-max lg:max-w-3xl lg:mx-auto">Developed from scratch for seamless online functionality</h2>
-                  <p class="text-base font-normal text-gray-500 lg:max-w-2xl lg:mx-auto mb-8">Using technology to make finance simpler, smarter and more rewarding. </p>  
-                  <div class="flex flex-col justify-center md:flex-row gap-5 max-w-lg mx-auto md:max-w-2xl lg:max-w-full">   
-                      <a href="javascript:;"  class="cursor-pointer bg-rose-700 py-3 px-6 rounded-full flex items-center justify-center text-sm font-semibold text-white transition-all duration-500 focus:outline-none hover:bg-indigo-700">
-                          Get started
-                      </a>
-                      <a href="javascript:;"  class="cursor-pointer bg-rose-200 py-3 px-6 rounded-full flex items-center justify-center  text-sm font-semibold text-gray-900 transition-all duration-500 focus:outline-none hover:bg-indigo-100">
-                          Learn more
-                      </a>
-                  </div>
-              </div>
-              <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-lg mx-auto md:max-w-2xl lg:max-w-full">
-                  <div class="relative w-full h-auto md:col-span-2">
-                      <div class="bg-gray-800 rounded-2xl flex  justify-between flex-row flex-wrap">
-                          <div class="p-5  xl:p-8 w-full md:w-1/2 ">
-                              <div class="block">
-                                  <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                      <path d="M15 12.5V18.75M18.75 2.5L11.25 2.5M15 28.75C8.7868 28.75 3.75 23.7132 3.75 17.5C3.75 11.2868 8.7868 6.25 15 6.25C21.2132 6.25 26.25 11.2868 26.25 17.5C26.25 23.7132 21.2132 28.75 15 28.75Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-                                      </svg>                                    
-                              </div>
-                              <h3 class="text-lg font-bold xl:text-xl text-white py-5 w-full xl:w-64">
-                                  Accomplish tasks swiftly with online tools.
-                              </h3>
-                              <p class="text-xs font-normal text-gray-300 w-full mb-8 xl:w-64">Get quoted and covered in under 10 minutes online. no paperwork or waiting any more </p>
-                              <button class="py-2 px-5 border border-solid border-gray-300 rounded-full gap-2 text-xs text-white font-semibold flex items-center justify-between transition-all duration-500 hover:bg-white/5">
-                                  View More
-                                  <svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                      <path d="M1 9L3.58579 6.41421C4.25245 5.74755 4.58579 5.41421 4.58579 5C4.58579 4.58579 4.25245 4.25245 3.58579 3.58579L1 1" stroke="white" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path>
-                                      </svg>
-                                      
-                              </button>
-                          </div>
-                          <div class="relative hidden h-auto md:w-1/2 md:block">
-                              <img src="https://pagedone.io/asset/uploads/1695028873.png" alt="Header tailwind Section" class="h-full ml-auto"/>
-                          </div>
-                      </div>
-                  </div>
-                  <div class="relative w-full h-auto">
-                      <div class="bg-rose-600 rounded-2xl p-5  xl:p-8 h-full">
-                          <div class="block">
-                              <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                  <path d="M24.6429 11.4286C24.6429 14.3872 20.2457 16.7857 14.8214 16.7857C9.3972 16.7857 5 14.3872 5 11.4286M24.6429 16.7857C24.6429 19.7444 20.2457 22.1429 14.8214 22.1429C9.3972 22.1429 5 19.7444 5 16.7857M24.6429 22.1429C24.6429 25.1015 20.2457 27.5 14.8214 27.5C9.3972 27.5 5 25.1015 5 22.1429M24.6429 6.96429C24.6429 9.42984 20.2457 11.4286 14.8214 11.4286C9.3972 11.4286 5 9.42984 5 6.96429C5 4.49873 9.3972 2.5 14.8214 2.5C20.2457 2.5 24.6429 4.49873 24.6429 6.96429Z" stroke="white" stroke-width="2" stroke-linecap="round"></path>
-                                  </svg>                                
-                          </div>
-                          <h3 class="py-5 text-white text-lg font-bold xl:text-xl">Improved technology yields greater value</h3>
-                          <p class="text-xs font-normal text-white mb-8">We’ve eliminated old analogue process with state-of-the art tech </p>
-                          <button class="py-2 px-5 border border-solid border-gray-300 rounded-full gap-2 text-xs text-white font-semibold flex items-center justify-between transition-all duration-500 hover:bg-white/5">
-                              View More
-                              <svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                  <path d="M1 9L3.58579 6.41421C4.25245 5.74755 4.58579 5.41421 4.58579 5C4.58579 4.58579 4.25245 4.25245 3.58579 3.58579L1 1" stroke="white" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path>
-                                  </svg>
-                                  
-                          </button>
-                      </div>
-                  </div>
-                  <div class="relative w-full h-auto">
-                      <div class="bg-violet-500 rounded-2xl p-5 xl:p-8 h-full">
-                          <div class="block">
-                              <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                  <path d="M26.7301 15.661C26.7301 22.1995 21.306 27.5 14.6151 27.5C7.9241 27.5 2.5 22.1995 2.5 15.661C2.5 9.1225 7.9241 3.822 14.6151 3.822M18.1313 10.1507L18.1313 4.85383C18.1313 3.22503 19.6455 2.00299 21.1519 2.70013C23.7608 3.90751 26.6177 6.25557 27.456 10.2563C27.7542 11.6798 26.4931 12.8563 25.0064 12.8368L20.7873 12.7814C19.3147 12.762 18.1313 11.5899 18.1313 10.1507Z" stroke="white" stroke-width="2" stroke-linecap="round"></path>
-                                  </svg>
-                                                                 
-                          </div>
-                          <h3 class="py-5 text-white text-lg font-bold xl:text-xl">Build wealth with insurance planning</h3>
-                          <p class="text-xs font-normal text-white mb-8">Every life plan policy has a built-in wealth bonus, and we contribute too    </p>
-                          <button class="py-2 px-5 border border-solid border-gray-300 rounded-full gap-2 text-xs text-white font-semibold flex items-center justify-between transition-all duration-500 hover:bg-white/5">
-                              View More
-                              <svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                  <path d="M1 9L3.58579 6.41421C4.25245 5.74755 4.58579 5.41421 4.58579 5C4.58579 4.58579 4.25245 4.25245 3.58579 3.58579L1 1" stroke="white" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path>
-                                  </svg>
-                                  
-                          </button>
-                      </div>
-                  </div>
-              
-              </div>
-        </div>
-    </section>
-                                            
-    </div>
+   
     <footer class="bg-white">
   <div class="mx-auto max-w-screen-xl space-y-8 px-4 py-16 sm:px-6 lg:space-y-16 lg:px-8">
     <div class="grid grid-cols-1 gap-8 lg:grid-cols-3">
@@ -434,51 +296,7 @@ const IndexPage = () => {
 
       <div class="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:col-span-2 lg:grid-cols-4">
         <div>
-          <p class="font-medium text-gray-900">Services</p>
-
-          <ul class="mt-6 space-y-4 text-sm">
-            <li>
-              <a href="#" class="text-gray-700 transition hover:opacity-75"> 1on1 Coaching </a>
-            </li>
-
-            <li>
-              <a href="#" class="text-gray-700 transition hover:opacity-75"> Company Review </a>
-            </li>
-
-            <li>
-              <a href="#" class="text-gray-700 transition hover:opacity-75"> Accounts Review </a>
-            </li>
-
-            <li>
-              <a href="#" class="text-gray-700 transition hover:opacity-75"> HR Consulting </a>
-            </li>
-
-            <li>
-              <a href="#" class="text-gray-700 transition hover:opacity-75"> SEO Optimisation </a>
-            </li>
-          </ul>
-        </div>
-
-        <div>
-          <p class="font-medium text-gray-900">Company</p>
-
-          <ul class="mt-6 space-y-4 text-sm">
-            <li>
-              <a href="#" class="text-gray-700 transition hover:opacity-75"> About </a>
-            </li>
-
-            <li>
-              <a href="#" class="text-gray-700 transition hover:opacity-75"> Meet the Team </a>
-            </li>
-
-            <li>
-              <a href="#" class="text-gray-700 transition hover:opacity-75"> Accounts Review </a>
-            </li>
-          </ul>
-        </div>
-
-        <div>
-          <p class="font-medium text-gray-900">Helpful Links</p>
+          <p class="font-medium text-gray-900">Contact Us</p>
 
           <ul class="mt-6 space-y-4 text-sm">
             <li>
@@ -486,33 +304,86 @@ const IndexPage = () => {
             </li>
 
             <li>
-              <a href="#" class="text-gray-700 transition hover:opacity-75"> FAQs </a>
+              <a href="#" class="text-gray-700 transition hover:opacity-75"> FAQ </a>
             </li>
 
             <li>
-              <a href="#" class="text-gray-700 transition hover:opacity-75"> Live Chat </a>
+              <a href="#" class="text-gray-700 transition hover:opacity-75"> Contact Sales </a>
+            </li>
+
+            <li>
+              <a href="#" class="text-gray-700 transition hover:opacity-75"> Book a Demo </a>
+            </li>
+
+            <li>
+              <a href="#" class="text-gray-700 transition hover:opacity-75"> Appsumo Redeem </a>
             </li>
           </ul>
         </div>
 
         <div>
-          <p class="font-medium text-black">Legal</p>
+          <p class="font-medium text-gray-900">Features</p>
 
           <ul class="mt-6 space-y-4 text-sm">
             <li>
-              <a href="//google.com" class="text-gray-900 transition hover:opacity-75"> Accessibility </a>
+              <a href="#" class="text-gray-700 transition hover:opacity-75"> Project Management </a>
             </li>
 
             <li>
-              <a href="#" class="text-gray-700 transition hover:opacity-75"> Returns Policy </a>
+              <a href="#" class="text-gray-700 transition hover:opacity-75"> Client Management </a>
             </li>
 
             <li>
-              <a href="#" class="text-gray-700 transition hover:opacity-75"> Refund Policy </a>
+              <a href="#" class="text-gray-700 transition hover:opacity-75"> Employee Management </a>
+            </li>
+            <li>
+              <a href="#" class="text-gray-700 transition hover:opacity-75"> Ticket Management </a>
+            </li>
+            <li>
+              <a href="#" class="text-gray-700 transition hover:opacity-75"> Finance Management </a>
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <p class="font-medium text-gray-900">Policy</p>
+
+          <ul class="mt-6 space-y-4 text-sm">
+            <li>
+              <a href="#" class="text-gray-700 transition hover:opacity-75"> Terms & Condition </a>
             </li>
 
             <li>
-              <a href="#" class="text-gray-700 transition hover:opacity-75"> Hiring Statistics </a>
+              <a href="#" class="text-gray-700 transition hover:opacity-75"> Privacy Policy </a>
+            </li>
+
+            <li>
+              <a href="#" class="text-gray-700 transition hover:opacity-75"> Cookies Policy </a>
+            </li>
+            <li>
+              <a href="#" class="text-gray-900 transition hover:opacity-75"> Return & Cancellation Policy </a>
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <p class="font-medium text-black">Company</p>
+
+          <ul class="mt-6 space-y-4 text-sm">
+            <li>
+              <a href="/about_us" class="text-gray-900 transition hover:opacity-75"> About Us </a>
+            </li>
+
+            <li>
+              <a href="#" class="text-gray-700 transition hover:opacity-75"> Features </a>
+            </li>
+
+            <li>
+              <a href="/pricing" class="text-gray-700 transition hover:opacity-75"> Pricing </a>
+            </li>
+
+            <li>
+              <a href="#" class="text-gray-700 transition hover:opacity-75"> Request Demo </a>
             </li>
           </ul>
         </div>
